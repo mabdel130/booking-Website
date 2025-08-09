@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="sprint2" parallel="tests" thread-count="1" preserve-order="true">
+    <test name="Order Reservation">
+        <parameter name="browserName" value=""/>
+        <classes>
+            <class name="testcases.TC_CompleteReservation">
+                <methods>
+                    <include name="configureSearchAndSelectHotel"/>
+                    <include name="selectRoomAndReserve"/>
+                    <include name="validateDetails"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
