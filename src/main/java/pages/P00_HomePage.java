@@ -48,11 +48,10 @@ public class P00_HomePage extends BasePage {
         return this;
     }
 
-    public P01_DetailsPage clickOnAvailabilityButton() {
+    public P00_HomePage clickOnAvailabilityButton() {
         longWait(driver).until(ExpectedConditions.elementToBeClickable(availabilityButton)).click();
         driver.get("https://www.booking.com/hotel/eg/royal-tulip-alexandria.html?label=gen173nr-10CAEoggI46AdIM1gEaEOIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoHGgcUGwAIB0gIkZjg4NjUxYjItOTFiYi00ZGI0LWI5MWMtZDAzOTIzNGM5Y2M12AIB4AIB&aid=304142&ucfs=1&arphpl=1&checkin=2025-10-01&checkout=2025-10-14&dest_id=788831&dest_type=hotel&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=f9b94c8416e60059&srepoch=1755341582&all_sr_blocks=78883120_386871369_0_33_0_131741&highlighted_blocks=78883120_386871369_0_33_0_131741&matching_block_id=78883120_386871369_0_33_0_131741&sr_pri_blocks=78883120_386871369_0_33_0_131741_146458&from=searchresults");
-
-        return new P01_DetailsPage(driver);
+        return new  P00_HomePage(driver);
 
     }
 }
