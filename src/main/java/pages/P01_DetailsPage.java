@@ -23,8 +23,8 @@ public class P01_DetailsPage extends BasePage {
         return new P01_DetailsPage(driver);
     }
 
-    public P01_DetailsPage reserveOrder() {
+    public P02_ReservationPage reserveOrder() {
         shortWait(driver).until(ExpectedConditions.visibilityOfElementLocated((reserveButton))).click();
-        return new P01_DetailsPage(driver);
+        return new P02_ReservationPage(driver);
     }
 }
